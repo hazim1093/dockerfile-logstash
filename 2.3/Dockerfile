@@ -33,8 +33,8 @@ RUN 			wget https://download.elastic.co/logstash/logstash/packages/debian/logsta
 
 ENV 			PATH /opt/logstash/bin:$PATH
 
-# Add Sample logstash config
-ADD       sample-logstash.conf /etc/logstash/conf.d/logstash.conf
+# Add ES logstash config
+ADD       es-logstash.conf /etc/logstash/conf.d/logstash.conf
 
 # expose default config folder
 VOLUME    /etc/logstash/conf.d
